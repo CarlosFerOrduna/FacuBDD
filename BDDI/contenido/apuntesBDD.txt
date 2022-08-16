@@ -1,0 +1,114 @@
+ diferencia entre base de datos y sistema de gestion de base de 
+datos
+
+aprender a diseñar base de datos para que sea facil de trabajar 
+con ellas
+
+El diseñom de la base de datos es una de las cosas mas importantes 
+a la hora de crear un sistema
+
+vamos a trabajar con MySQL
+vamos a ver base de datos relacionales primero para ver despues 
+como trabajan las no relacionales
+
+relacionales pierden eficacia:
+1°fidelidad y calidad de los datos
+2°todas las aplicaciones detras tienen una base de datos.
+
+peor problema para un programador, cliente con tabla de excel
+Programadores son enemigos de excel
+-----------------------------------------------------------------
+DESCARGAR MySQL
+-----------------------------------------------------------------
+DESCARGAR XAMP
+-----------------------------------------------------------------
+preferente usar base de datos en lugar de excel o archivo txt
+ya que el sistema esta preparado para trabajar de una forma
+la cual tendria que configurar yo al usar excel
+---------------------------------------------------
+POSIBLE CHAPA: ADMINISTRADOR DE BASE DE DATOS......
+---------------------------------------------------
+TP Integrador a mitade del año. segunda mitad de año segundo tp
+Hacer una base de datos, imstalarla.
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+LEER EL MATERIAL SUBIDO POR EL PROFE AL CLASSROOM
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+fail over == replica
+
+2 PARCIALES ONLINE Y ENTREGA DE 2 TP ONLINE
+
+ONLINE(ejercicios cortos de diseñar una mini base de datos)
+
+.mwb
+
+MySQL
+XAMPP
+WAMP
+APACHE
+--------------------
+puerto==por donde solicitamos las cosas a MySQL
+
+para MySQL 3306
+
+hostname: 127.0.0.1
+----------------------------------------------------------------
+30/08
+----------------------------------------------------------------
+¿Que es una base de datos?
+Teoria del conjunto Tedd Code
+Concepto de entidad:
+- Rectangulo con nombre.
+- Atributos de entidad.
+---------
+Entidad debil: Depende de otra entidad para existir. Ej:
+Medio de pago depende de pago.
+
+Relacion entre entidad y entidad llamar con verbo:
+Ej. Grua <=> Auto. grua lleva auto, auto es llevado por grua.
+Atributo de la relacion: 
+Persona <Compra> Auto. Fecha de compra seria un atributo de 
+la relacion.
+
+Cantidad de ocurrencias == relaciones.
+Puede haber mas de una relacion entre la entidad A y la entidad
+B. 
+Cardinalidad:
+A <C> B 
+A <C> D
+A <C> E
+Una persona puede coomprar muchos autos, pero un auto es 
+comprado por una sola persona.
+Se llama cardinalidad a la posibilidad de una entidad para 
+relacionarse con uno o mas elementos, mientras que otros cuentan
+solo con una.
+
+Tipos de cardinalidades:
+1 - 1. una persona tiene un auto
+1 - N. una persona tiene mas de un auto.
+N - 1. un auto es conducido por mas de una persona.
+N - M. remiseria, muchos choferes usan muchos autos.
+
+
+INT en MySql numero sin coma que
+va desde -2^10 hasta 2^10
+
+VARCHAR(45) (String) en MySql es texto
+el numero entre parentesis(45) es el 
+limite de caracteres del nombre
+
+la diferencia entre VARCHAR y CHAR es
+que el primero toma como tamaño el numero
+de letras del nombre y el segundo toma
+el numero de caracteres que le asigne
+
+Todas las entidades deben tener una clave
+primara: id_nombre
+
+Clave foranea es la entidad que visita
+una entidad(relacion entre entidad y entidad)
++
+
+
+Ni comillas ni eñes
+
+ 

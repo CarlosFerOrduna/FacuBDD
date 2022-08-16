@@ -1,0 +1,26 @@
+use venta;
+select peso from producto where peso > 600;
+select edad from cliente order by edad;
+select count(*) from producto;
+select count(*) from venta;
+-- Consultar nombre cliente, fecha de venta, cantidad de item_venta y nombre de producto.
+select cliente.nombre, venta.fecha_venta, count(id_item_venta), producto.nombre
+from cliente
+inner join venta on cliente.id_cliente = venta.id_cliente
+inner join item_venta on venta.id_venta = item_venta.id_venta
+inner join producto on item_venta.id_producto = producto.id_producto;
+-- Consultar nombre cliente, fecha de venta, cantidad de item_venta, nombre de producto y nombre de categoria de producto.
+select cliente.nombre, venta.fecha_venta, count(id_item_venta), producto.nombre, categoria.nombre
+from cliente
+inner join venta on cliente.id_cliente = venta.id_cliente
+inner join item_venta on venta.id_venta = item_venta.id_venta
+inner join producto on item_venta.id_producto = producto.id_producto
+inner join categoria on producto.id_categoria = categoria.id_categoria;
+-- Consultar  nombre cliente, nombre de vendedor, fecha de venta, cantidad de item_venta, nombre de producto y nombre de categoria de producto.
+select cliente.nombre, vendedor.nombre, venta.fecha_venta, count(id_item_venta), producto.nombre, producto.nombre, categoria.nombre
+from cliente
+inner join venta on cliente.id_cliente = venta.id_cliente
+inner join vendedor on vendedor.id_vendedor = venta.id_vendedor
+inner join item_venta on venta.id_venta = item_venta.id_venta
+inner join producto on item_venta.id_producto = producto.id_producto
+inner join categoria on producto.id_categoria = categoria.id_categoria;

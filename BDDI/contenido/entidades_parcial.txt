@@ -1,0 +1,11 @@
+Curso - carrera
+categoria
+tema
+subcategoria
+profes populares
+valoracion
+idioma
+duracion del curso
+precio
+nivel
+los mas populares
